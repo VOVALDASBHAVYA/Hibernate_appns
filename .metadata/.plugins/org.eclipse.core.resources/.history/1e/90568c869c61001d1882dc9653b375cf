@@ -1,0 +1,30 @@
+package com.ojas.entity;
+
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="IOS")
+@DiscriminatorValue(value="Android")
+
+public class IOS extends Mobile {
+
+	public String ModelType;
+	public double price_per_model;
+
+	public String getModelType() {
+		return ModelType;
+	}
+	public void setModelType(String ModelType) {
+		this.ModelType = ModelType;
+	}
+	public double getprice_per_model() {
+		return price_per_model;
+	}
+	public void setPrice(double price_per_model) {
+		this.price_per_model = price_per_model;
+	}
+	
+}

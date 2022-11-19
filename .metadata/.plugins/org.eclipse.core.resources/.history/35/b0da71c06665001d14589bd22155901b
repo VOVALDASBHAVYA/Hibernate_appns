@@ -1,0 +1,45 @@
+package com.ojas.collnSet;
+
+public class Demo {
+
+	public static void main(String[] args) {
+//		int num1 = 20;
+//		double num2 = 0;
+//		if (num1 >= 20)
+//			num2 = 1.5;
+//		if (num1 < 30)
+//			num2 = 2;
+//		System.out.println("Value of num2 is " + num2);
+//		int num1 = 25;
+//		int num2 = 34;
+//		if (num1 / 3 >= num2 / 4) {
+//			num1 = num1 + 1;
+//
+//		} else {
+//			num2 = num2 + 1;
+//		}
+//		System.out.println(num1 + "," + num2);
+		
+//		int a = 12 * 3 - 9 / 2;
+//		int b = 14 * 4 + 175 / 8;
+//		if (a++ % 2 == 0) {
+//			if (b-- % 4 == 0) {
+//				System.out.println("a = " + a + " b = " + b);
+//			} else {
+//				System.out.println("a = " + a + " b = " + b);
+//			}
+//		} else {
+//			System.out.println("a = " + a + " b = " + --b);
+//		}
+		int num1=0,num2=5;
+		if ((num1 / num2 == 5) && (num1 + num2) > 5) {
+			System.out.println("1");
+		} else if ((num1 - num2) >= 1 || (num1 % num2) == 0) {
+			System.out.println("2");
+		} else {
+			System.out.println("3");
+		}
+
+	}
+
+}

@@ -1,0 +1,52 @@
+package com.ojas.entity;
+
+import java.util.Date;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="BOOK")
+public class Book {
+
+	public int id;
+	public String title;
+	public String description;
+	public Date publishedDate;
+
+	public Book() {
+		
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+
+	public Date getPublishedDate() {
+		return publishedDate;
+	}
+
+	public void setPublishedDate(Date publishedDate) {
+		this.publishedDate = publishedDate;
+	}
+
+}

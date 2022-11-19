@@ -1,0 +1,59 @@
+package com.ojas.cnstr;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//import java.util.HashSet;
+//import java.util.Set;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class Client_GroupUser {
+
+	public static void main(String[] args) {
+		Configuration cfg = new Configuration();
+		cfg.configure();
+		SessionFactory sf = cfg.buildSessionFactory();
+		Session s = sf.openSession();
+		Transaction tx = s.beginTransaction();
+
+		Group group = new Group();
+		group.setId(1);
+		group.setName("Java");
+
+		Group grup1 = new Group();
+		grup1.setId(2);
+		grup1.setName("Javas");
+
+		List<Group> list = new ArrayList<Group>();
+		list.add(group);
+		list.add(grup1);
+
+		User user = new User();
+		user.setuName("Bhavya");
+		user.setEmail("bavya@gmail.com");
+		user.setPassword("bibinager");
+
+		User user1 = new User();
+		user1.setuName("Bhavyas");
+		user1.setEmail("bavyas@gmail.com");
+		user1.setPassword("bibinagers");
+
+		List<User> list1 = new ArrayList<User>();
+		list1.add(user);
+		list1.add(user1);
+
+		
+		s.saveOrUpdate(user);
+		s.saveOrUpdate(user1);
+		
+		tx.commit();
+		s.close();
+		sf.close();
+
+	}
+
+}

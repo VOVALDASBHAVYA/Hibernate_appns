@@ -1,0 +1,5 @@
+package com.ojas.lombok;
+
+public class Customers {
+
+}

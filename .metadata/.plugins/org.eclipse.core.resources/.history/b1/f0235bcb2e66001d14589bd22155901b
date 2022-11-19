@@ -1,0 +1,48 @@
+package com.ojas.cnstr;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Group {
+
+	public int id;
+	public String name;
+	public Set<User> users = new HashSet<User>();
+
+	public Group(String name) {
+		this.name = name;
+	}
+
+	public Group(Set<User> users) {//doubt
+		super();
+		this.users = users;
+	}
+	/*
+	 * publicvoidaddUser(User user) { this.users.add(user); }
+	 */
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Set<User> getUsers() {
+		return users;
+	}
+
+	public void setUsers(Set<User> users) {
+		this.users = users;
+	}
+
+}

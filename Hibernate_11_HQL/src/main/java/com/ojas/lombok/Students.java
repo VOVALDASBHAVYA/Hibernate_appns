@@ -1,0 +1,36 @@
+package com.ojas.lombok;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Entity
+@Table
+@Data
+@ToString
+@EqualsAndHashCode
+@NoArgsConstructor
+@AllArgsConstructor
+	public class Students {
+	
+	
+		@Id
+		public int id;
+		public String name;
+		public int age;
+		public String address;
+		public String blood_group;
+		
+//		@Override
+//		public String toString() {
+//			return "Students [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", blood_group="
+//					+ blood_group + "]";
+//		}
+
+}

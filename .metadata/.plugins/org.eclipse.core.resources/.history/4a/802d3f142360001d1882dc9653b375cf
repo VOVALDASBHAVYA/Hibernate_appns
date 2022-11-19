@@ -1,0 +1,12 @@
+package com.ojas.entity;
+
+import org.hibernate.cfg.Configuration;
+
+public class Employe_TPH {
+
+	public static void main(String[] args) {
+	Configuration cfg=Configuratio	
+	
+	}
+
+}

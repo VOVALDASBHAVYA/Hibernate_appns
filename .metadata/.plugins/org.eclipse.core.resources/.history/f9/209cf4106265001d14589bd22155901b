@@ -1,0 +1,10 @@
+package com.ojas.entity;
+
+public class Client_BooknAuth {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

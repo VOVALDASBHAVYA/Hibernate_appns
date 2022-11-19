@@ -1,0 +1,28 @@
+package com.ojas.annotationEntity;
+
+import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
+@Entity
+@Table(name = "Employee")
+public class Employee {
+	@Id
+	@Column(name = "id")
+	public int employeId;
+	
+	@Column(name = "EName")
+	public String employeName;
+	
+	@Column(name = "Esalary")
+	public Double employeSalary;
+
+	
+
+	public String toString() {
+		return employeId + "\t" + employeName + "\t" + employeSalary;
+	}
+
+}

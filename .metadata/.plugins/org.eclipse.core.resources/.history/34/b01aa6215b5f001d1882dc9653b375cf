@@ -1,0 +1,41 @@
+package com.ojas.annotationEntity;
+import javax.persistence.Column;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.Entity;
+@Entity
+@Table(name="Employe")
+public class Employe {
+	@Id
+	@Column(name="id")
+	public int employeId;
+	@Column(name="eName")
+	public String employeName;
+	@Column(name="salary")
+	public Double employeSalary;
+	
+	public int getEmployeId() {
+		return employeId;
+	}
+	public void setEmployeId(int employeId) {
+		this.employeId = employeId;
+	}
+	public String getEmployeName() {
+		return employeName;
+	}
+	public void setEmployeName(String employeName) {
+		this.employeName = employeName;
+	}
+	public Double getEmployeSalary() {
+		return employeSalary;
+	}
+	public void setEmployeSalary(Double employeSalary) {
+		this.employeSalary = employeSalary;
+	}
+	
+	public String toString(){
+		return employeId+"\t"+employeName+"\t"+employeSalary;
+	}
+
+}

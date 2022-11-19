@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 8, 2022 9:47:39 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ojas.pojo.Student" table="STUDENT">
+        <id name="sid" type="java.lang.Integer">
+            
+            <generator class="assigned" />
+        </id>
+        <property name="sname" type="java.lang.String">
+            
+        </property>
+        <property name="marks" type="int">
+            
+        </property>
+    </class>
+</hibernate-mapping>

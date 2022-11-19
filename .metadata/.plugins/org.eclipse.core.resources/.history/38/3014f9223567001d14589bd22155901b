@@ -1,0 +1,11 @@
+package com.ojas.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Student {
+
+	public int studentId;
+	public String studentName;
+	public String studentAddress;
+}

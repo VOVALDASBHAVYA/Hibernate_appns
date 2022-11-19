@@ -1,0 +1,20 @@
+package com.ojas.entity;
+
+public class Mobile {
+	public int mobileId;
+	public String mobileBrand;
+	
+	public int getMobileId() {
+		return mobileId;
+	}
+	public void setMobileId(int mobileId) {
+		this.mobileId = mobileId;
+	}
+	public String getMobileBrand() {
+		return mobileBrand;
+	}
+	public void setMobileBrand(String mobileBrand) {
+		this.mobileBrand = mobileBrand;
+	}
+	
+}

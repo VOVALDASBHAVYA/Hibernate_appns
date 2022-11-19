@@ -1,0 +1,21 @@
+package com.ojas.collnSet;
+
+public class TraineeDetails {
+
+	public static void main(String[] args) {
+//		String traineeName="Maria Jerome";
+//		String designation="Systems Engineer";
+//		System.out.println("My name is "+traineeName);
+//		System.out.println("My dsignation is "+designation);
+
+//			int discount = 10; // discount is a variable
+//			double totalPrice = 200; // totalPrice is a variable
+//			double priceAfterDiscount = totalPrice * (1 - ((double) discount / 100)); // priceAfterDiscount is a variable
+//			System.out.println("Customer has paid a bill of amount: "+ priceAfterDiscount);
+
+		int age; 
+		System.out.println(age); 
+		
+	}
+
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 8, 2022 4:37:23 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.ojas.annotationEntity.Employee" table="EMPLOYEE">
+        <id name="employeId" type="int">
+            <column name="EMPLOYEID" />
+            <generator class="assigned" />
+        </id>
+        <property name="employeName" type="java.lang.String">
+            <column name="EMPLOYENAME" />
+        </property>
+        <property name="employeSalary" type="java.lang.Double">
+            <column name="EMPLOYESALARY" />
+        </property>
+    </class>
+</hibernate-mapping>

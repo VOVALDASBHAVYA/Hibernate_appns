@@ -1,0 +1,28 @@
+package com.ojas.annotationEntity;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class CreateEmployee {
+
+	public static void main(String[] args) {
+		Configuration cfg=new Configuration();
+		cfg.configure();
+		SessionFactory sf=cfg.buildSessionFactory();
+		Session s=sf.openSession();
+		Transaction tx=s.beginTransaction();
+		
+		Employe e=new Employe();
+		e.setEmployeId(1);
+		e.setEmployeName("vedalu");
+		e.setEmployeSalary((double) 1000000);
+		s.saveOrUpdate(e);
+		tx.commit();
+		s.close();
+		sf.close();
+
+	}
+
+}
